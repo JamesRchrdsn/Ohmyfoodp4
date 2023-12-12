@@ -150,7 +150,6 @@ h1{
     line-height: 1em;
     color: #FFFFFF;
     background: var(--main-color);
-    color: #FFFFFF;
 }
 
 .functionnement ol{
