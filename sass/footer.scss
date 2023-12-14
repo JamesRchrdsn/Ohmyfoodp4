@@ -1,13 +1,29 @@
 footer{
-    background-color: $title;
+    background-color: $grey1;
+    display: flex;
+    width: 23.4375em;
+    padding: 1.375em 1.5625em;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
     h3{
-        color:$backgroundwhite;
         font-family: $text2;
+        color: $backgroundwhite;
     }
     ul{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin: 0;
+        gap: 0.4375em;
         li{
             color: $backgroundwhite;
             list-style: none;
+            font-family: $text1;
+            a{
+                text-decoration: none;
+                color: $backgroundwhite;
+            }
         }
     }
 }

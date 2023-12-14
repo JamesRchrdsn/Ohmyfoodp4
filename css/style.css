@@ -196,6 +196,7 @@ h3 {
 
 .restaurant {
   grid-column: 2/3;
+  padding-bottom: 4.18em;
 }
 
 .restaurant ::before {
@@ -263,15 +264,33 @@ h3 {
 }
 
 footer {
-  background-color: #000;
+  background-color: #353535;
+  display: flex;
+  width: 23.4375em;
+  padding: 1.375em 1.5625em;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
 }
 footer h3 {
-  color: #FFFFFF;
   font-family: "Shrikhand", serif;
+  color: #FFFFFF;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin: 0;
+  gap: 0.4375em;
 }
 footer ul li {
   color: #FFFFFF;
   list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
