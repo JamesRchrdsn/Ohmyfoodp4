@@ -1,13 +1,3 @@
-:root {
-  --main-color: #9356DC;
-  --second-color: #FF79DA;
-  --third-color: #99E2D0;
-  font-family: "Roboto", sans-serif;
-  font-family: "Shrikhand", serif;
-  --grey-1: #353535;
-  --grey-2: #eaeaea;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -16,6 +6,34 @@ body {
 header {
   display: flex;
   flex-direction: column;
+}
+header .location {
+  width: 100%;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625em 0;
+}
+header .location i {
+  font-size: 1.188em;
+  color: #353535;
+}
+header .location input {
+  width: 9em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  padding: 0.625em;
+  border: none;
+  border-radius: 0.313em;
+  outline: none;
+  background-color: #eaeaea;
+}
+header .location input::placeholder {
+  color: #353535;
+  opacity: 1;
 }
 
 nav {
@@ -32,21 +50,6 @@ nav {
   padding: 1.25em 0 0.75em 0;
 }
 
-header p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin: 0;
-  padding: 1em 0;
-  background-color: var(--grey-2);
-  gap: 1.06em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  line-height: normal;
-  color: var(--grey-1);
-}
-
 main {
   display: grid;
   grid-template-columns: 1.063em 1fr 1.063em;
@@ -60,6 +63,16 @@ main {
   align-items: center;
   flex-direction: column;
   padding-bottom: 3.563em;
+}
+.reservation p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  color: #353535;
+  margin-top: 0;
 }
 
 .reservation::before {
@@ -96,17 +109,6 @@ h3 {
   margin: 0;
 }
 
-.reservation p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.125em;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  text-align: center;
-  color: var(--grey-1);
-  margin-top: 0;
-}
-
 .button {
   display: flex;
   font-size: 1em;
@@ -115,17 +117,50 @@ h3 {
   font-family: "Roboto", sans-serif;
   line-height: 1.063em;
   border-radius: 1.5625em;
-  background: linear-gradient(193deg, var(--main-color) -11.44%, var(--second-color) 123.93%);
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0 0.25em 0.625em 0 rgba(0, 0, 0, 0.25);
   height: 3.125em;
   width: 13.625em;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 .functionnement {
   grid-column: 2/3;
   padding: 3em 0 4.25em 0;
+}
+.functionnement ol {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  gap: 1.563em;
+  margin: 0;
+  padding: 1.625em 0 0 0.75em;
+  counter-reset: li;
+  list-style: none;
+}
+.functionnement ol li {
+  display: flex;
+  align-items: center;
+  gap: 1.25em;
+  flex-basis: 100%;
+  margin: 0;
+  padding: 1.813em 2.375em 1.75em 2.344em;
+  background: #FFFFFF;
+  box-shadow: 0 0.25em 0.938em 0 rgba(0, 0, 0, 0.1490196078);
+  border-radius: 1.25em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.125em;
+  color: #000;
+}
+.functionnement ol li i {
+  color: #7e7e7e;
+}
+.functionnement ol li i.fa-store {
+  color: #9356DC;
 }
 
 .functionnement::before {
@@ -152,48 +187,11 @@ h3 {
   height: 1.5em;
   width: 1.5em;
   border-radius: 100%;
-  font-family: "roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 0.875em;
   line-height: 1em;
   color: #FFFFFF;
-  background: var(--main-color);
-}
-
-.functionnement ol {
-  display: flex;
-  align-items: flex-start;
-  flex-flow: row wrap;
-  gap: 1.563em;
-  margin: 0;
-  padding: 1.625em 0 0 0.75em;
-  counter-reset: li;
-  list-style: none;
-}
-
-.functionnement ol li {
-  display: flex;
-  align-items: center;
-  gap: 1.25em;
-  flex-basis: 100%;
-  margin: 0;
-  padding: 1.813em 2.375em 1.75em 2.344em;
-  background: #F6F6F6;
-  box-shadow: 0 0.25em 0.938em 0 rgba(0, 0, 0, 0.1490196078);
-  border-radius: 1.25em;
-  font-family: "roboto";
-  font-size: 1em;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 1.125em;
-  color: #000;
-}
-
-.functionnement ol li i {
-  color: #7e7e7e;
-}
-
-.functionnement ol li i.fa-store {
-  color: var(--main-color);
+  background: #9356DC;
 }
 
 .restaurant {
@@ -239,15 +237,6 @@ h3 {
   border-top-right-radius: 0.938em;
 }
 
-.card-content p {
-  font-size: 1.063em;
-  color: #000;
-  font-weight: 300;
-  line-height: 1.245em;
-  font-family: "roboto";
-  margin: 0;
-}
-
 .card-content {
   display: flex;
   flex-direction: column;
@@ -255,7 +244,14 @@ h3 {
   justify-content: flex-start;
   padding: 1em 1.563em 1em 0.813em;
 }
-
+.card-content p {
+  font-size: 1.063em;
+  color: #000;
+  font-weight: 300;
+  line-height: 1.245em;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
 .card-content .fa-heart {
   position: absolute;
   align-self: flex-end;
@@ -264,6 +260,18 @@ h3 {
   top: 9.2em;
   right: 2.8em;
   color: #000;
+}
+
+footer {
+  background-color: #000;
+}
+footer h3 {
+  color: #FFFFFF;
+  font-family: "Shrikhand", serif;
+}
+footer ul li {
+  color: #FFFFFF;
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
