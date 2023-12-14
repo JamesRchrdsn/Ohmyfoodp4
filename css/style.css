@@ -1,178 +1,176 @@
 :root {
-    --main-color: #9356DC;
-    --second-color: #FF79DA;
-    --third-color: #99E2D0;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Shrikhand', serif;
-    --grey-1: #353535;
-    --grey-2: #eaeaea;
+  --main-color: #9356DC;
+  --second-color: #FF79DA;
+  --third-color: #99E2D0;
+  font-family: "Roboto", sans-serif;
+  font-family: "Shrikhand", serif;
+  --grey-1: #353535;
+  --grey-2: #eaeaea;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-
+header {
+  display: flex;
+  flex-direction: column;
 }
 
-nav{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 38, 0.15);
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 38, 0.15);
 }
 
-.logo{
-    width: 10.125em;
-    max-height: 100%;
-    padding: 1.25em 0 0.75em 0;
+.logo {
+  width: 10.125em;
+  max-height: 100%;
+  padding: 1.25em 0 0.75em 0;
 }
 
-header p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-    padding: 1em 0;
-    background-color: var(--grey-2);
-    gap: 1.06em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    line-height: normal;
-    color: var(--grey-1);
+header p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 1em 0;
+  background-color: var(--grey-2);
+  gap: 1.06em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--grey-1);
 }
 
-main{
-    display: grid;
-    grid-template-columns: 1.063em 1fr 1.063em;
-    grid-template-rows: 1fr auto;
-    position: relative;
+main {
+  display: grid;
+  grid-template-columns: 1.063em 1fr 1.063em;
+  grid-template-rows: 1fr auto;
+  position: relative;
 }
 
-.reservation{
-    grid-column: 2/3;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 3.563em;
+.reservation {
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3.563em;
 }
 
 .reservation::before {
-    content: "";  
-    position: absolute;  
-    z-index: -1;  
-    grid-column: 1/4;  
-    grid-row: 1/2;  
-    left: 0;  
-    top: 0;  
-    width: 100%;  
-    height: 100%;  
-    background: #F6F6F6;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #F6F6F6;
 }
 
-h1, h2, h3{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    color: #000;
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #000;
 }
 
-h1, h2{
-    font-size: 1.5rem;
+h1, h2 {
+  font-size: 1.5rem;
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
 
-h3{
-    font-size: 1.125em;
-    line-height: 1.318em;
-    margin: 0;
+h3 {
+  font-size: 1.125em;
+  line-height: 1.318em;
+  margin: 0;
 }
 
-.reservation p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.125em;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-align: center;
-    color: var(--grey-1);
-    margin-top: 0;
+.reservation p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  color: var(--grey-1);
+  margin-top: 0;
 }
 
-.button{
-    display: flex;
-    font-size: 1em;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.063em;
-    border-radius: 1.5625em;
-    background: linear-gradient(193deg, var(--main-color) -11.44%, var(--second-color) 123.93%);
-    box-shadow: 0 0.25em 0.625em 0 rgba(0, 0, 0, 0.25);
-    height: 3.125em;
-    width: 13.625em;
-    color: #ffff;
-    text-decoration: none;
+.button {
+  display: flex;
+  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.063em;
+  border-radius: 1.5625em;
+  background: linear-gradient(193deg, var(--main-color) -11.44%, var(--second-color) 123.93%);
+  box-shadow: 0 0.25em 0.625em 0 rgba(0, 0, 0, 0.25);
+  height: 3.125em;
+  width: 13.625em;
+  color: white;
+  text-decoration: none;
 }
 
-.functionnement{
-    grid-column: 2/3;
-    padding: 3em 0 4.25em 0;
-
+.functionnement {
+  grid-column: 2/3;
+  padding: 3em 0 4.25em 0;
 }
 
 .functionnement::before {
-    content: "";  
-    position: absolute;  
-    z-index: -1;  
-    grid-column: 1/4;  
-    grid-row: 2/3;  
-    left: 0;  
-    top: 0;  
-    width: 100%;  
-    height: 100%;  
-    background: #FFFFFF;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
 }
 
 .functionnement ol li::before {
-    counter-increment: li;
-    content: counters(li, ".") "";
-    position: absolute;
-    left: 1.23em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 1.5em;
-    width: 1.5em;
-    border-radius: 100%;
-    font-family: "roboto";
-    font-size: 0.875em;
-    line-height: 1em;
-    color: #FFFFFF;
-    background: var(--main-color);
+  counter-increment: li;
+  content: counters(li, ".") "";
+  position: absolute;
+  left: 1.23em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 100%;
+  font-family: "roboto";
+  font-size: 0.875em;
+  line-height: 1em;
+  color: #FFFFFF;
+  background: var(--main-color);
 }
 
-.functionnement ol{
-    display: flex;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    gap: 1.563em;
-    margin: 0;
-    padding: 1.625em 0 0 0.75em;
-    counter-reset: li;
-    list-style: none;    
+.functionnement ol {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  gap: 1.563em;
+  margin: 0;
+  padding: 1.625em 0 0 0.75em;
+  counter-reset: li;
+  list-style: none;
 }
 
-.functionnement ol li{
+.functionnement ol li {
   display: flex;
   align-items: center;
   gap: 1.25em;
@@ -188,84 +186,84 @@ h3{
   font-style: normal;
   line-height: 1.125em;
   color: #000;
-
 }
 
-.functionnement ol li i{
-    color: #7e7e7e;
+.functionnement ol li i {
+  color: #7e7e7e;
 }
 
 .functionnement ol li i.fa-store {
-    color: var(--main-color)    
+  color: var(--main-color);
 }
 
-.restaurant{
-    grid-column: 2/3;
+.restaurant {
+  grid-column: 2/3;
 }
 
-.restaurant ::before{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    grid-column: 1/4;
-    grid-row: 3/4;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #F6F6F6;
+.restaurant ::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  grid-column: 1/4;
+  grid-row: 3/4;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #F6F6F6;
 }
 
 .cards {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-row-gap: 1.125em;
-    width: 100%;
-    
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 1.125em;
+  width: 100%;
 }
 
 .card {
-    position: relative;
-    box-sizing: border-box;
-    border-radius: 0.938em;
-    background: #FFFFFF;
-    text-decoration: none;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 0.938em;
+  background: #FFFFFF;
+  text-decoration: none;
 }
 
-.card_img { 
-    width: 100%;
-    height: 10.875em;
-    object-fit: cover;
-    border-top-left-radius: 0.938em;
-    border-top-right-radius: 0.938em;
+.card_img {
+  width: 100%;
+  height: 10.875em;
+  object-fit: cover;
+  border-top-left-radius: 0.938em;
+  border-top-right-radius: 0.938em;
 }
 
-.card-content p{
-    font-size: 1.063em;
-    color: #000;
-    font-weight: 300;
-    line-height: 1.245em;
-    font-family: "roboto";
-    margin: 0;
+.card-content p {
+  font-size: 1.063em;
+  color: #000;
+  font-weight: 300;
+  line-height: 1.245em;
+  font-family: "roboto";
+  margin: 0;
 }
 
-.card-content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 1em 1.563em 1em 0.813em;
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1em 1.563em 1em 0.813em;
 }
 
-.card-content .fa-heart{
-    position: absolute;
-    align-self: flex-end;
-    z-index: 1;
-    font-size: 1.375em;
-    top: 9.2em;
-    right: 2.8em;
-    color: #000;
+.card-content .fa-heart {
+  position: absolute;
+  align-self: flex-end;
+  z-index: 1;
+  font-size: 1.375em;
+  top: 9.2em;
+  right: 2.8em;
+  color: #000;
 }
+
+/*# sourceMappingURL=style.css.map */
