@@ -253,14 +253,10 @@ h3 {
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
-.card-content .fa-heart {
+.card-content svg {
   position: absolute;
-  align-self: flex-end;
-  z-index: 1;
-  font-size: 1.375em;
-  top: 9.2em;
-  right: 2.8em;
-  color: #000;
+  left: 90%;
+  top: 78%;
 }
 .card-content .badge {
   display: grid;
@@ -304,6 +300,14 @@ footer ul li {
 footer ul li a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.card-content .act-heart {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.card-content .act-heart:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

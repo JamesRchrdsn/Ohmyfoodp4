@@ -208,14 +208,10 @@ h3{
         font-family: $text1;
         margin: 0;
     }
-    .fa-heart{
+    svg{
         position: absolute;
-        align-self: flex-end;
-        z-index: 1;
-        font-size: 1.375em;
-        top: 9.2em;
-        right: 2.8em;
-        color: $title;
+        left: 90%;
+        top: 78%;
     }
     .badge {
         display: grid;
