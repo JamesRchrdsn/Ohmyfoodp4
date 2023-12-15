@@ -262,6 +262,19 @@ h3 {
   right: 2.8em;
   color: #000;
 }
+.card-content .badge {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  background-color: #99E2D0;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875em;
+  color: #10392f;
+  width: 4.5em;
+  height: 1.75em;
+  top: 1.125em;
+  right: 1.25em;
+}
 
 footer {
   background-color: #353535;

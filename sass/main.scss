@@ -217,4 +217,17 @@ h3{
         right: 2.8em;
         color: $title;
     }
+    .badge {
+        display: grid;
+        place-items: center;
+        position: absolute;
+        background-color: $third;
+        font-family: $text1;
+        font-size: 0.875em;
+        color: darken($third, 60%);
+        width: 4.5em;
+        height: 1.75em;
+        top: 1.125em;
+        right: 1.25em;
+      }
 }
