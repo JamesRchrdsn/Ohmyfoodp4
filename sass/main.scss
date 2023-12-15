@@ -73,6 +73,11 @@ h3{
     width: 13.625em;
     color: $backgroundwhite;
     text-decoration: none;
+    transition: all 0.2s;
+    &:hover{
+        opacity: 0.8;
+        transform: scale(1.015);
+    }
 }
 
 .functionnement{
