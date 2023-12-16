@@ -173,6 +173,7 @@ h3 {
 .functionnement ol li {
   display: flex;
   align-items: center;
+  position: relative;
   gap: 1.25em;
   flex-basis: 100%;
   margin: 0;
@@ -191,7 +192,7 @@ h3 {
   counter-increment: li;
   content: counters(li, ".") "";
   position: absolute;
-  left: 1.23em;
+  left: -0.8em;
   display: flex;
   align-items: center;
   justify-content: center;
