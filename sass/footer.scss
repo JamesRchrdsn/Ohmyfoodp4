@@ -6,16 +6,18 @@ footer{
     flex-direction: column;
     align-items: flex-start;
     gap: 1em;
-    h3{
-        font-family: $text2;
-        color: $backgroundwhite;
-    }
     ul{
         display: flex;
         flex-direction: column;
         padding-left: 0;
         margin: 0;
         gap: 0.4375em;
+
+        @media only screen and (min-width: 1024px){
+            flex-direction: row;
+            gap: 0.8em;
+            padding-right: 3em;
+        }
         li{
             color: $backgroundwhite;
             list-style: none;
@@ -25,5 +27,9 @@ footer{
                 color: $backgroundwhite;
             }
         }
+    }
+    @media only screen and (min-width: 1024px){
+        flex-direction: row-reverse;
+        padding: 2.88em 1.56em 1em 1.56em;
     }
 }
