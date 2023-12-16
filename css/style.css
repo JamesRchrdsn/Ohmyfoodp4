@@ -56,14 +56,14 @@ nav {
   }
 }
 
-main {
+.container {
   display: grid;
   grid-template-columns: 1.063em 1fr 1.063em;
   grid-template-rows: 1fr auto;
   position: relative;
 }
 @media only screen and (min-width: 1024px) {
-  main {
+  .container {
     grid-template-columns: minmax(1.063em, 1fr) minmax(1.063em, 78em) minmax(1.063em, 1fr);
   }
 }
@@ -365,6 +365,11 @@ footer ul li a {
 }
 .card-content .act-heart:hover {
   opacity: 1;
+}
+
+header .banner {
+  object-fit: cover;
+  height: 17.188em;
 }
 
 /*# sourceMappingURL=style.css.map */
