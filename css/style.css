@@ -49,12 +49,23 @@ nav {
   max-height: 100%;
   padding: 1.25em 0 0.75em 0;
 }
+@media only screen and (min-width: 1024px) {
+  .logo {
+    width: 12.5em;
+    padding: 1.88em 0 1.99em 0;
+  }
+}
 
 main {
   display: grid;
   grid-template-columns: 1.063em 1fr 1.063em;
   grid-template-rows: 1fr auto;
   position: relative;
+}
+@media only screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: minmax(1.063em, 1fr) minmax(1.063em, 78em) minmax(1.063em, 1fr);
+  }
 }
 
 .reservation {
@@ -72,9 +83,13 @@ main {
   line-height: normal;
   text-align: center;
   color: #353535;
-  margin-top: 0;
+  margin: 0 0 1.688em 0;
 }
-
+@media only screen and (min-width: 1024px) {
+  .reservation {
+    padding: 1.88em 0;
+  }
+}
 .reservation::before {
   content: "";
   position: absolute;
@@ -101,6 +116,12 @@ h1, h2 {
 
 h1 {
   text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2.5em;
+    margin: 0 0 0.8em 0;
+  }
 }
 
 h3 {
@@ -144,6 +165,11 @@ h3 {
   counter-reset: li;
   list-style: none;
 }
+@media only screen and (min-width: 1024px) {
+  .functionnement ol {
+    gap: 2.375em;
+  }
+}
 .functionnement ol li {
   display: flex;
   align-items: center;
@@ -151,7 +177,7 @@ h3 {
   flex-basis: 100%;
   margin: 0;
   padding: 1.813em 2.375em 1.75em 2.344em;
-  background: #FFFFFF;
+  background: #F6F6F6;
   box-shadow: 0 0.25em 0.938em 0 rgba(0, 0, 0, 0.1490196078);
   border-radius: 1.25em;
   font-family: "Roboto", sans-serif;
@@ -161,26 +187,6 @@ h3 {
   line-height: 1.125em;
   color: #000;
 }
-.functionnement ol li i {
-  color: #7e7e7e;
-}
-.functionnement ol li i.fa-store {
-  color: #9356DC;
-}
-
-.functionnement::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  grid-column: 1/4;
-  grid-row: 2/3;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #FFFFFF;
-}
-
 .functionnement ol li::before {
   counter-increment: li;
   content: counters(li, ".") "";
@@ -198,13 +204,36 @@ h3 {
   color: #FFFFFF;
   background: #9356DC;
 }
+.functionnement ol li i {
+  color: #7e7e7e;
+}
+.functionnement ol li i.fa-store {
+  color: #9356DC;
+}
+@media only screen and (min-width: 1024px) {
+  .functionnement ol li {
+    flex: 1 0 22%;
+    white-space: nowrap;
+  }
+}
+.functionnement::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+}
 
 .restaurant {
   grid-column: 2/3;
   padding-bottom: 4.18em;
 }
-
-.restaurant ::before {
+.restaurant::before {
   content: "";
   position: absolute;
   z-index: -1;

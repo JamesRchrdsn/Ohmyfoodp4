@@ -43,6 +43,11 @@ nav{
     width: 10.125em;
     max-height: 100%;
     padding: 1.25em 0 0.75em 0;
+
+    @media only screen and (min-width: 1024px){
+        width: 12.5em;
+        padding: 1.88em 0 1.99em 0;
+    }
 }
 
 
