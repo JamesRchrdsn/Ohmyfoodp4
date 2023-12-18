@@ -43,6 +43,17 @@ nav {
   justify-content: center;
   box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 38, 0.15);
 }
+nav .backarrow {
+  position: absolute;
+  left: 1.063em;
+  text-decoration: none;
+}
+nav .backarrow i {
+  font-size: 1.375em;
+  display: flex;
+  align-items: center;
+  color: #353535;
+}
 
 .logo {
   width: 10.125em;
@@ -367,9 +378,39 @@ footer ul li a {
   opacity: 1;
 }
 
-header .banner {
+.restaurant-container .banner {
   object-fit: cover;
   height: 17.188em;
+  width: 100%;
+}
+.restaurant-container .namelike {
+  background-color: #F6F6F6;
+  border-radius: 2.5em 2.5em 0 0;
+  position: relative;
+  top: -3.875em;
+  max-width: 65.9375em;
+  padding: 2em 1.06em 0 1.06em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurant-container .namelike h2 {
+  font-family: "Shrikhand", serif;
+  font-size: 1.75em;
+  font-weight: 400;
+}
+.restaurant-container .namelike .like {
+  display: flex;
+  align-items: center;
+}
+.restaurant-container .namelike .like .act-heart {
+  position: relative;
+  left: -1.375em;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.restaurant-container .namelike .like .act-heart:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

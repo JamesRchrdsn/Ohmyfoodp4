@@ -1,6 +1,39 @@
-header{
-    .banner{
+.restaurant-container{
+
+        .banner{
         object-fit: cover;
         height: 17.188em;
-    }
+        width: 100%;
+         }
+        .namelike{
+        background-color: $backgroundgrey;
+        border-radius: 2.5em 2.5em 0 0;
+        position: relative;
+        top: -3.875em;
+        max-width: 65.9375em;
+        padding: 2em 1.06em 0 1.06em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        h2{
+            font-family: $text2;
+            font-size: 1.75em;
+            font-weight: 400;
+        }
+
+        .like{
+            display: flex;
+            align-items: center;
+            .act-heart{
+                position: relative;
+                left: -1.375em;
+                opacity: 0;
+                transition: all 0.2s ease-in-out;
+                    &:hover{
+                        opacity: 1;
+                    }
+            }
+        }
+         }
 }
