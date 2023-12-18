@@ -28,11 +28,6 @@
             .act-heart{
                 position: relative;
                 left: -1.375em;
-                opacity: 0;
-                transition: all 0.2s ease-in-out;
-                    &:hover{
-                        opacity: 1;
-                    }
             }
         }
     }

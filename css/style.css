@@ -141,27 +141,6 @@ h3 {
   margin: 0;
 }
 
-.button {
-  display: flex;
-  font-size: 1em;
-  align-items: center;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.063em;
-  border-radius: 1.5625em;
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  box-shadow: 0 0.25em 0.625em 0 rgba(0, 0, 0, 0.25);
-  height: 3.125em;
-  width: 13.625em;
-  color: #FFFFFF;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-.button:hover {
-  opacity: 0.8;
-  transform: scale(1.015);
-}
-
 .functionnement {
   grid-column: 2/3;
   padding: 3em 0 4.25em 0;
@@ -370,12 +349,40 @@ footer ul li a {
   }
 }
 
-.card-content .act-heart {
+.act-heart {
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
-.card-content .act-heart:hover {
+.act-heart:hover {
   opacity: 1;
+}
+
+.backarrow {
+  transition: all 0.2s ease-in-out;
+}
+.backarrow:hover {
+  transform: scale(1.3);
+}
+
+.button {
+  display: flex;
+  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.063em;
+  border-radius: 1.5625em;
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0 0.25em 0.625em 0 rgba(0, 0, 0, 0.25);
+  height: 3.125em;
+  width: 13.625em;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.button:hover {
+  opacity: 0.8;
+  transform: scale(1.015);
 }
 
 .restaurant-container .banner {
@@ -407,11 +414,6 @@ footer ul li a {
 .restaurant-container .namelike .like .act-heart {
   position: relative;
   left: -1.375em;
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
-}
-.restaurant-container .namelike .like .act-heart:hover {
-  opacity: 1;
 }
 .restaurant-container .menu-restaurant {
   background: #F6F6F6;
