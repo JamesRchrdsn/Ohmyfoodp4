@@ -34,3 +34,49 @@
         transform: scale(1.015);
     }
 }
+
+
+.namelike{
+    h2{
+        transform: translateX(0);
+        animation: move-title 1s 0.4s both;
+    }
+}
+
+.menutitle, .underline{
+    transform: translateX(0);
+    animation: move-title 1.2s 0.7s both ; 
+}
+
+.menucontent{
+        opacity: 0;
+        animation: down-menu 2s both;
+}
+
+@keyframes move-title{
+    0%{
+        transform: translateX(-99999px);
+    }
+
+
+
+    42%{
+        transform: translateX(-200px);
+        opacity: 0.5;
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes down-menu{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
