@@ -351,10 +351,11 @@ footer ul li a {
 
 .act-heart {
   opacity: 0;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .act-heart:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .backarrow {
@@ -387,17 +388,17 @@ footer ul li a {
 
 .namelike h2 {
   transform: translateX(0);
-  animation: move-title 1s 0.4s both;
+  animation: move-title 1s 0.8s ease-in-out both;
 }
 
 .menutitle, .underline {
   transform: translateX(0);
-  animation: move-title 1.2s 0.7s both;
+  animation: move-title 1.2s 1.1s ease-in-out both;
 }
 
 .menucontent {
   opacity: 0;
-  animation: down-menu 2s both;
+  animation: down-menu 2s ease-in-out both;
 }
 
 @keyframes move-title {
