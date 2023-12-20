@@ -70,33 +70,45 @@
                     flex-direction: row;
                     cursor: pointer;
                     overflow: hidden;
-
+                    justify-content: space-between;
                     @media only screen and (min-width: 1440px){
                         max-width: 60%;
                     }
                     .plate{
                         overflow: hidden;
-                        p{
+                        width: 85%;
+                        padding: 0.94em;
+                        
+                        p, h4{
                             font-family: $text1;
                             overflow: hidden;
                             text-overflow: ellipsis;
                             white-space: nowrap;
 
                         }
-                        .platetitle{
+                        h4{
                             font-size: 1.125em;
                             font-weight: 700;
-                            margin: 0;                            
+                            margin: 0;   
+                            
+                            @media only screen and (max-width: 420px){
+                                max-width: 90%;
+                            }
                         }
-                        .platecontent{
+                        p{
                             font-size: 0.94019em;
                             font-weight: 300;
                             margin-top: 0.31em;
                             margin-bottom: 0;
+                            @media only screen and (max-width: 420px){
+                                max-width: 78%;
+                            }
                         }
-                         width: 85%;
-                        padding: 0.94em;
+
                     }
+                    .pricecheck{
+                        display: flex;
+                        flex-direction: row;
                     .plateprice{
                         display: flex;
                         align-items: flex-end;
@@ -107,6 +119,7 @@
                         padding-right: 1em;
                         transition: all 0.7s ease-in-out;
                     }
+
                     .check{
                         border-radius: 0 15px 15px 0;
                         background-color: $third;
@@ -121,6 +134,7 @@
                             transition: all 0.7s ease-in-out;
                             font-size: 1.7em;
                         }
+                    }
                     }
                 }
             }

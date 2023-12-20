@@ -26,6 +26,12 @@ footer{
                 text-decoration: none;
                 color: $backgroundwhite;
             }
+
+            i{
+                margin-right: 0.85em;
+                width: 0.75em;
+                height: 0.75em;
+            }
         }
     }
     @media only screen and (min-width: 1024px){

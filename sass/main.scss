@@ -91,7 +91,7 @@ h3{
             position: relative;
             gap: 1.25em;
             flex-basis: 100%;
-            margin: 0;
+            margin-right: 1.8%;
             padding: 1.813em 2.375em 1.75em 2.344em;
             background: $backgroundgrey;
             box-shadow: 0 0.25em 0.938em 0 rgba(0, 0, 0, 0.1490196078);
@@ -127,7 +127,7 @@ h3{
                 }
             }
             @media only screen and (min-width: 1024px){
-                flex: 1 0 22%;
+                flex: 1 0 21%;
                 white-space:nowrap;
             }
           }  
