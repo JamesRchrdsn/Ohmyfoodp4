@@ -1,25 +1,25 @@
 .restaurant-container{
-    .banner{
-        object-fit: cover;
-        height: 17.188em;
-        width: 100%;
-         }
         .namelike{
         background-color: $backgroundgrey;
         border-radius: 2.5em 2.5em 0 0;
         position: relative;
-        margin-top: -3.875em;
-        max-width: 65.9375em;
-        padding: 2em 1.06em;
+        margin-top: -3.875em;        
+        padding: 2em 0em;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        
+        @media only screen and (min-width: 1024px){
+            justify-content: center;
+            gap: 1em;
+        }
 
         h2{
             font-family: $text2;
             font-size: 1.75em;
             font-weight: 400;
             margin: 0;
+            padding-left: 1.06em;
         }
 
         .like{
@@ -33,20 +33,25 @@
     }
     .menu-restaurant{
         background: $backgroundgrey;
-
         .cardsmenu{
             padding-bottom: 2.5em;
             .menutitle{
                 padding-left: 0.5em;
                 font-weight: 300;
                 font-size: 1em;
-                text-transform: uppercase              
+                text-transform: uppercase;               
+                @media only screen and (min-width: 1440px){
+                    margin-left: 20%;
+                }
             }
             .underline{
                 border: 2px solid #99E2D0;
                 width: 2.5em;
                 margin-left: 0.5em;
                 margin-top: 0.313em;
+                @media only screen and (min-width: 1440px){
+                    margin-left: 20%;
+                }
                 }
             .menucontent{
                 display: flex;
@@ -65,17 +70,23 @@
                     flex-direction: row;
                     cursor: pointer;
                     overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
+
+                    @media only screen and (min-width: 1440px){
+                        max-width: 60%;
+                    }
                     .plate{
+                        overflow: hidden;
                         p{
                             font-family: $text1;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
 
                         }
                         .platetitle{
                             font-size: 1.125em;
                             font-weight: 700;
-                            margin: 0;
+                            margin: 0;                            
                         }
                         .platecontent{
                             font-size: 0.94019em;
@@ -93,7 +104,7 @@
                         font-weight: 700;
                         color: $grey1;
                         font-family: $text1;
-                        padding-right: 0.5em;
+                        padding-right: 1em;
                         transition: all 0.7s ease-in-out;
                     }
                     .check{
@@ -108,6 +119,7 @@
                         i{
                             color: $backgroundwhite;
                             transition: all 0.7s ease-in-out;
+                            font-size: 1.7em;
                         }
                     }
                 }
@@ -122,5 +134,9 @@
             height: 3.125em;
             }
         }     
+    }
+
+    @media only screen and (min-width: 1024px){
+        padding: 0 13.2em;
     }
 }
