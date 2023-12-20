@@ -1,0 +1,10 @@
+.check {
+  opacity: 0;
+  transform: translateX(0);
+  transition: transform 750ms ease-in-out;
+}
+.check:hover {
+  opacity: 1;
+  transform: translateX(-4.66em);
+  transition: transform 750ms ease;
+}

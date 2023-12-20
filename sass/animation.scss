@@ -38,6 +38,23 @@
 }
 
 
+.menucontent li{
+  
+    &:hover {
+      .check {
+        transform: translateX(-4.66em);
+        i{
+            transform: rotate(360deg);
+        }
+      }
+  
+      .plateprice {
+        transform: translateX(-4.66em);
+      }
+    }
+}
+
+
 .namelike{
     h2{
         transform: translateX(0);

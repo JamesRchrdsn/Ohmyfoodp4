@@ -386,6 +386,16 @@ footer ul li a {
   transform: scale(1.015);
 }
 
+.menucontent li:hover .check {
+  transform: translateX(-4.66em);
+}
+.menucontent li:hover .check i {
+  transform: rotate(360deg);
+}
+.menucontent li:hover .plateprice {
+  transform: translateX(-4.66em);
+}
+
 .namelike h2 {
   transform: translateX(0);
   animation: move-title 1s 0.8s ease-in-out both;
@@ -487,6 +497,10 @@ footer ul li a {
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: row;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .restaurant-container .menu-restaurant .cardsmenu .menucontent li .plate {
   width: 85%;
@@ -494,9 +508,6 @@ footer ul li a {
 }
 .restaurant-container .menu-restaurant .cardsmenu .menucontent li .plate p {
   font-family: "Roboto", sans-serif;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .restaurant-container .menu-restaurant .cardsmenu .menucontent li .plate .platetitle {
   font-size: 1.125em;
@@ -516,6 +527,22 @@ footer ul li a {
   font-weight: 700;
   color: #353535;
   font-family: "Roboto", sans-serif;
+  padding-right: 0.5em;
+  transition: all 0.7s ease-in-out;
+}
+.restaurant-container .menu-restaurant .cardsmenu .menucontent li .check {
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  min-width: 4.66em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.7s ease-in-out;
+  margin-right: -4.66em;
+}
+.restaurant-container .menu-restaurant .cardsmenu .menucontent li .check i {
+  color: #FFFFFF;
+  transition: all 0.7s ease-in-out;
 }
 .restaurant-container .menu-restaurant .btn-container {
   display: flex;
