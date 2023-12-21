@@ -2,11 +2,11 @@
     width: 100%;
     height: 100%;
     background-image: radial-gradient(circle, $primary, #ac5bdc, #c160dc,#d667db,$secondary,#d885ec,#c898f8,#bba9ff,#86c3ff,#48daff,#27edff,$third);
-        
+    display: flex;
+    justify-content: center;
+    align-items: center;   
     svg{
         position: absolute;
-        top: 48%;
-        left: 33%;
         animation: rotatesvg 1s 2.7s cubic-bezier(.73,.41,.17,.38);
     }
     animation: loader 3.5s cubic-bezier(.73,.41,.17,.38);

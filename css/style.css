@@ -463,12 +463,13 @@ footer ul li i {
   width: 100%;
   height: 100%;
   background-image: radial-gradient(circle, #9356DC, #ac5bdc, #c160dc, #d667db, #FF79DA, #d885ec, #c898f8, #bba9ff, #86c3ff, #48daff, #27edff, #99E2D0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation: loader 3.5s cubic-bezier(0.73, 0.41, 0.17, 0.38);
 }
 .loader svg {
   position: absolute;
-  top: 48%;
-  left: 33%;
   animation: rotatesvg 1s 2.7s cubic-bezier(0.73, 0.41, 0.17, 0.38);
 }
 
