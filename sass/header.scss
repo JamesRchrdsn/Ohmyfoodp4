@@ -1,7 +1,9 @@
 header{
+    // Mise en page des entetes de chaques pages
     display: flex;
     flex-direction: column;
         .location {
+            // Mise en page de l'input de l'index
         width: 100%;
         background-color: $grey2;
         display: flex;
@@ -32,6 +34,7 @@ header{
 }
 
 nav{
+    // Logo et retour en arrière des pages restaurants
     position: relative;
     display: flex;
     align-items: center;
@@ -52,6 +55,7 @@ nav{
 }
 
 .logo{
+    // Taille du logo sur les différentes pages
     width: 10.125em;
     max-height: 100%;
     padding: 1.25em 0 0.75em 0;
@@ -64,6 +68,7 @@ nav{
 
 
 .banner{
+    // Mise en page de la photo des restaurants de l'entête
     object-fit: cover;
     height: 17.188em;
     width: 100%;

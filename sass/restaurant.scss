@@ -1,9 +1,13 @@
 .restaurant-container{
+    // Correspond à l'ensemble du main
+
         .namelike{
+            // Correspond au nom du restaurant,bouton like et 
+            // le radius sur le bas de la photo
         background-color: $backgroundgrey;
         border-radius: 2.5em 2.5em 0 0;
         position: relative;
-        margin-top: -3.875em;        
+        margin-top: -2.4em;        
         padding: 2em 0em;
         display: flex;
         flex-direction: row;
@@ -32,8 +36,10 @@
         }
     }
     .menu-restaurant{
+        // Correspond au menu complet et bouton commander
         background: $backgroundgrey;
         .cardsmenu{
+            // Correspond à chacunes des parties entrées plats desserts avec leurs titres
             padding-bottom: 2.5em;
             .menutitle{
                 margin-left: 2%;
@@ -54,6 +60,7 @@
                 }
                 }
             .menucontent{
+                // Cible plus précisement le menu sans les titres
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -61,6 +68,7 @@
                 padding: 0;
                 margin-top: 0.75em;
                 li{
+                    // Correspond à chaques plats
                     list-style: none;
                     background: $backgroundwhite;
                     border-radius: 0.94019em;
@@ -107,50 +115,51 @@
 
                     }
                     .pricecheck{
+                        // correspond à la forme de l'encoche animé
                         display: flex;
                         flex-direction: row;
-                    .plateprice{
-                        display: flex;
-                        align-items: flex-end;
-                        padding-bottom: 1em ;
-                        font-weight: 700;
-                        color: $grey1;
-                        font-family: $text1;
-                        padding-right: 1em;
-                        transition: all 0.7s ease-in-out;
-                    }
-
-                    .check{
-                        border-radius: 0 15px 15px 0;
-                        background-color: $third;
-                        min-width: 4.66em;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        transition: all 0.7s ease-in-out;
-                        margin-right: -4.66em;
-                        i{
-                            color: $backgroundwhite;
+                        .plateprice{
+                            display: flex;
+                            align-items: flex-end;
+                            padding-bottom: 1em ;
+                            font-weight: 700;
+                            color: $grey1;
+                            font-family: $text1;
+                            padding-right: 1em;
                             transition: all 0.7s ease-in-out;
-                            font-size: 1.7em;
+                             }
+
+                        .check{
+                            border-radius: 0 15px 15px 0;
+                            background-color: $third;
+                            min-width: 4.66em;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: all 0.7s ease-in-out;
+                            margin-right: -4.66em;
+                            i{
+                                color: $backgroundwhite;
+                                transition: all 0.7s ease-in-out;
+                                font-size: 1.7em;
+                                }
+                            }
                         }
-                    }
                     }
                 }
             }
-        }
-        .btn-container{
-            display: flex;
-            justify-content: center;
-            padding-bottom: 2.5em;
-            .button{
-            width: 11.625em;
-            height: 3.125em;
+            .btn-container{
+                 display: flex;
+                justify-content: center;
+                padding-bottom: 2.5em;
+                    .button{
+                    width: 11.625em;
+                    height: 3.125em;
+                    }
+                }     
             }
-        }     
-    }
 
-    @media only screen and (min-width: 1024px){
-        padding: 0 13.2em;
-    }
-}
+            @media only screen and (min-width: 1024px){
+                padding: 0 13.2em;
+            }
+        }
