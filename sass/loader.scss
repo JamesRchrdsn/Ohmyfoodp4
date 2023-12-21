@@ -1,0 +1,75 @@
+.loader{
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, $primary, #ac5bdc, #c160dc,#d667db,$secondary,#d885ec,#c898f8,#bba9ff,#86c3ff,#48daff,#27edff,$third);
+    z-index: 1;
+    position: fixed;
+    opacity: 0;
+    svg{
+        position: absolute;
+        top: 48%;
+        left: 33%;
+        animation: rotatesvg 1s 2.7s cubic-bezier(.73,.41,.17,.38);
+    }
+    animation: loader 3.5s cubic-bezier(.73,.41,.17,.38);
+}
+
+@keyframes rotatesvg{
+    80%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes  loader{
+    0% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+    22% {
+        transform: scale(1.4);
+        box-shadow: 0 0 0 100px rgba($primary, 0);
+        opacity: 1;
+      }
+    37% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 0 rgba($primary, 0);
+        opacity: 1;
+      }
+    46% {
+        transform: scale(1.4);
+        box-shadow: 0 0 0 100px rgba($primary, 0);
+        opacity: 1;
+      }
+    54% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 0 rgba($primary, 0);
+        opacity: 1;
+      }
+    66% {
+        transform: scale(1.4);
+        box-shadow: 0 0 0 100px rgba($primary, 0);
+        opacity: 1;
+      }
+    73% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 0 rgba($primary, 0);
+        opacity: 1;
+      }
+    84% {
+        transform: scale(1.4);
+        box-shadow: 0 0 0 100px rgba($primary, 0);
+        opacity: 0.8;
+      }
+    92% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 0 rgba($primary, 0);
+        opacity:0.5;
+      }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 -40px rgba($primary, 0);
+        opacity:0.3;
+      }
+
+}
