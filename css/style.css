@@ -463,9 +463,6 @@ footer ul li i {
   width: 100%;
   height: 100%;
   background-image: radial-gradient(circle, #9356DC, #ac5bdc, #c160dc, #d667db, #FF79DA, #d885ec, #c898f8, #bba9ff, #86c3ff, #48daff, #27edff, #99E2D0);
-  z-index: 1;
-  position: fixed;
-  opacity: 0;
   animation: loader 3.5s cubic-bezier(0.73, 0.41, 0.17, 0.38);
 }
 .loader svg {
@@ -484,51 +481,71 @@ footer ul li i {
   0% {
     transform: scale(1.2);
     opacity: 1;
+    z-index: 1;
+    position: fixed;
   }
   22% {
     transform: scale(1.4);
     box-shadow: 0 0 0 100px rgba(147, 86, 220, 0);
     opacity: 1;
+    z-index: 1;
+    position: fixed;
   }
   37% {
     transform: scale(1.2);
     box-shadow: 0 0 0 0 rgba(147, 86, 220, 0);
     opacity: 1;
+    z-index: 1;
+    position: fixed;
   }
   46% {
     transform: scale(1.4);
     box-shadow: 0 0 0 100px rgba(147, 86, 220, 0);
     opacity: 1;
+    z-index: 1;
+    position: fixed;
   }
   54% {
     transform: scale(1.2);
     box-shadow: 0 0 0 0 rgba(147, 86, 220, 0);
     opacity: 1;
+    z-index: 1;
+    position: fixed;
   }
   66% {
     transform: scale(1.4);
     box-shadow: 0 0 0 100px rgba(147, 86, 220, 0);
     opacity: 1;
+    z-index: 1;
+    position: fixed;
   }
   73% {
     transform: scale(1.2);
     box-shadow: 0 0 0 0 rgba(147, 86, 220, 0);
     opacity: 1;
+    z-index: 1;
+    position: fixed;
   }
   84% {
     transform: scale(1.4);
     box-shadow: 0 0 0 100px rgba(147, 86, 220, 0);
     opacity: 0.8;
+    z-index: 1;
+    position: fixed;
   }
   92% {
     transform: scale(1.2);
     box-shadow: 0 0 0 0 rgba(147, 86, 220, 0);
     opacity: 0.5;
+    z-index: 1;
+    position: fixed;
   }
   100% {
     transform: scale(1);
     box-shadow: 0 0 0 -40px rgba(147, 86, 220, 0);
     opacity: 0.3;
+    z-index: 1;
+    position: fixed;
   }
 }
 .restaurant-container .namelike {
