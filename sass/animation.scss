@@ -35,10 +35,10 @@
     &:hover{
         opacity: 0.8;
         transform: scale(1.015);
-        
+        box-shadow: 0 0.25em 0.625em 0.3em rgba(0, 0, 0, 0.25);
     }
 }
-
+ 
 // L'animation verte des plats concernant l'encoche et le prix
 .menucontent li{
   
