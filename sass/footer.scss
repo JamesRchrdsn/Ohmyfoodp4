@@ -1,4 +1,4 @@
-footer{
+footer {
     // Mise en page du footer des différentes pages
     background-color: $grey1;
     display: flex;
@@ -8,38 +8,42 @@ footer{
     align-items: flex-start;
     gap: 1em;
 
-    svg{
-        padding-left: 1.5625em; 
+    svg {
+        padding-left: 1.5625em;
     }
-    ul{
+
+    ul {
         display: flex;
         flex-direction: column;
         padding-left: 1.5625em;
         margin: 0;
         gap: 0.4375em;
 
-        @media only screen and (min-width: 1024px){
+        @media only screen and (min-width: 1024px) {
             flex-direction: row;
             gap: 0.8em;
             padding-right: 3em;
         }
-        li{
+
+        li {
             color: $backgroundwhite;
             list-style: none;
             font-family: $text1;
-            a{
+
+            a {
                 text-decoration: none;
                 color: $backgroundwhite;
             }
 
-            i{
+            i {
                 margin-right: 0.85em;
                 width: 0.75em;
                 height: 0.75em;
             }
         }
     }
-    @media only screen and (min-width: 1024px){
+
+    @media only screen and (min-width: 1024px) {
         flex-direction: row-reverse;
         padding: 2.88em 0 1em 0;
     }

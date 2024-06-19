@@ -1,93 +1,103 @@
-.loader{
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(circle, $primary, #ac5bdc, #c160dc,#d667db,$secondary,#d885ec,#c898f8,#bba9ff,#86c3ff,#48daff,#27edff,$third);
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    svg{
-        position: absolute;
-        animation: rotatesvg 1s 2.7s cubic-bezier(.73,.41,.17,.38);
-    }
-    animation: loader 3.5s cubic-bezier(.73,.41,.17,.38);
+.loader {
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, $primary, #ac5bdc, #c160dc, #d667db, $secondary, #d885ec, #c898f8, #bba9ff, #86c3ff, #48daff, #27edff, $third);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    position: absolute;
+    animation: rotatesvg 1s 2.7s cubic-bezier(.73, .41, .17, .38);
+  }
+
+  animation: loader 3.5s cubic-bezier(.73, .41, .17, .38);
 }
 
-@keyframes rotatesvg{
-    80%{
-        transform: rotate(360deg);
-    }
+@keyframes rotatesvg {
+  80% {
+    transform: rotate(360deg);
+  }
 }
 
-@keyframes  loader{
-    0% {
-        transform: scale(1.2);
-        opacity: 1;
-        z-index: 1;
-        position: fixed;
-      }
-    22% {
-        transform: scale(1.4);
-        box-shadow: 0 0 0 100px rgba($primary, 0);
-        opacity: 1;
-        z-index: 1;
-        position: fixed;
-      }
-    37% {
-        transform: scale(1.2);
-        box-shadow: 0 0 0 0 rgba($primary, 0);
-        opacity: 1;
-        z-index: 1;
-        position: fixed;
-      }
-    46% {
-        transform: scale(1.4);
-        box-shadow: 0 0 0 100px rgba($primary, 0);
-        opacity: 1;
-        z-index: 1;
-        position: fixed;
-      }
-    54% {
-        transform: scale(1.2);
-        box-shadow: 0 0 0 0 rgba($primary, 0);
-        opacity: 1;
-        z-index: 1;
-        position: fixed;
-      }
-    66% {
-        transform: scale(1.4);
-        box-shadow: 0 0 0 100px rgba($primary, 0);
-        opacity: 1;
-        z-index: 1;
-        position: fixed;
-      }
-    73% {
-        transform: scale(1.2);
-        box-shadow: 0 0 0 0 rgba($primary, 0);
-        opacity: 1;
-        z-index: 1;
-        position: fixed;
-      }
-    84% {
-        transform: scale(1.4);
-        box-shadow: 0 0 0 100px rgba($primary, 0);
-        opacity: 0.8;
-        z-index: 1;
-        position: fixed;
-      }
-    92% {
-        transform: scale(1.2);
-        box-shadow: 0 0 0 0 rgba($primary, 0);
-        opacity:0.5;
-        z-index: 1;
-        position: fixed;
-      }
+@keyframes loader {
+  0% {
+    transform: scale(1.2);
+    opacity: 1;
+    z-index: 1;
+    position: fixed;
+  }
 
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 -40px rgba($primary, 0);
-        opacity:0.3;
-        z-index: 1;
-        position: fixed;
-      }
+  22% {
+    transform: scale(1.4);
+    box-shadow: 0 0 0 100px rgba($primary, 0);
+    opacity: 1;
+    z-index: 1;
+    position: fixed;
+  }
+
+  37% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 0 rgba($primary, 0);
+    opacity: 1;
+    z-index: 1;
+    position: fixed;
+  }
+
+  46% {
+    transform: scale(1.4);
+    box-shadow: 0 0 0 100px rgba($primary, 0);
+    opacity: 1;
+    z-index: 1;
+    position: fixed;
+  }
+
+  54% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 0 rgba($primary, 0);
+    opacity: 1;
+    z-index: 1;
+    position: fixed;
+  }
+
+  66% {
+    transform: scale(1.4);
+    box-shadow: 0 0 0 100px rgba($primary, 0);
+    opacity: 1;
+    z-index: 1;
+    position: fixed;
+  }
+
+  73% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 0 rgba($primary, 0);
+    opacity: 1;
+    z-index: 1;
+    position: fixed;
+  }
+
+  84% {
+    transform: scale(1.4);
+    box-shadow: 0 0 0 100px rgba($primary, 0);
+    opacity: 0.8;
+    z-index: 1;
+    position: fixed;
+  }
+
+  92% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 0 rgba($primary, 0);
+    opacity: 0.5;
+    z-index: 1;
+    position: fixed;
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 -40px rgba($primary, 0);
+    opacity: 0.3;
+    z-index: 1;
+    position: fixed;
+  }
 
 }

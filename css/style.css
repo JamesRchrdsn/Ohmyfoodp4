@@ -81,7 +81,10 @@ nav .backarrow i {
 }
 @media only screen and (min-width: 1024px) {
   .container {
-    grid-template-columns: minmax(1.063em, 1fr) minmax(1.063em, 78em) minmax(1.063em, 1fr);
+    grid-template-columns: minmax(1.063em, 1fr) minmax(1.063em, 78em) minmax(
+        1.063em,
+        1fr
+      );
   }
 }
 
@@ -117,17 +120,20 @@ nav .backarrow i {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   color: #000;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 1.5rem;
 }
 
@@ -174,7 +180,7 @@ h3 {
   flex-basis: 100%;
   margin-right: 1.8%;
   padding: 1.813em 2.375em 1.75em 2.344em;
-  background: #F6F6F6;
+  background: #f6f6f6;
   box-shadow: 0 0.25em 0.938em 0 rgba(0, 0, 0, 0.1490196078);
   border-radius: 1.25em;
   font-family: "Roboto", sans-serif;
@@ -198,14 +204,14 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-size: 0.875em;
   line-height: 1em;
-  color: #FFFFFF;
-  background: #9356DC;
+  color: #ffffff;
+  background: #9356dc;
 }
 .functionnement ol li i {
   color: #7e7e7e;
 }
 .functionnement ol li i.fa-store {
-  color: #9356DC;
+  color: #9356dc;
 }
 @media only screen and (min-width: 1024px) {
   .functionnement ol li {
@@ -223,7 +229,7 @@ h3 {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .restaurant {
@@ -240,7 +246,7 @@ h3 {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 
 .cards {
@@ -270,7 +276,7 @@ h3 {
   position: relative;
   box-sizing: border-box;
   border-radius: 0.938em;
-  background: #FFFFFF;
+  background: #ffffff;
   text-decoration: none;
 }
 
@@ -306,7 +312,7 @@ h3 {
   display: grid;
   place-items: center;
   position: absolute;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   font-family: "Roboto", sans-serif;
   font-size: 0.875em;
   color: #10392f;
@@ -343,13 +349,13 @@ footer ul {
   }
 }
 footer ul li {
-  color: #FFFFFF;
+  color: #ffffff;
   list-style: none;
   font-family: "Roboto", sans-serif;
 }
 footer ul li a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 footer ul li i {
   margin-right: 0.85em;
@@ -387,11 +393,11 @@ footer ul li i {
   font-family: "Roboto", sans-serif;
   line-height: 1.063em;
   border-radius: 1.5625em;
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0 0.25em 0.625em 0 rgba(0, 0, 0, 0.25);
   height: 3.125em;
   width: 13.625em;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.2s;
 }
@@ -416,7 +422,8 @@ footer ul li i {
   animation: move-title 1.2s 0.4s ease-in-out both;
 }
 
-.menutitle, .underline {
+.menutitle,
+.underline {
   transform: translateX(0);
   animation: move-title 1.4s 0.6s ease-in-out both;
 }
@@ -466,7 +473,21 @@ footer ul li i {
 .loader {
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle, #9356DC, #ac5bdc, #c160dc, #d667db, #FF79DA, #d885ec, #c898f8, #bba9ff, #86c3ff, #48daff, #27edff, #99E2D0);
+  background-image: radial-gradient(
+    circle,
+    #9356dc,
+    #ac5bdc,
+    #c160dc,
+    #d667db,
+    #ff79da,
+    #d885ec,
+    #c898f8,
+    #bba9ff,
+    #86c3ff,
+    #48daff,
+    #27edff,
+    #99e2d0
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -554,7 +575,7 @@ footer ul li i {
   }
 }
 .restaurant-container .namelike {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 2.5em 2.5em 0 0;
   position: relative;
   margin-top: -2.4em;
@@ -585,7 +606,7 @@ footer ul li i {
   left: -1.375em;
 }
 .restaurant-container .menu-restaurant {
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 .restaurant-container .menu-restaurant .cardsmenu {
   padding-bottom: 2.5em;
@@ -602,7 +623,7 @@ footer ul li i {
   }
 }
 .restaurant-container .menu-restaurant .cardsmenu .underline {
-  border: 2px solid #99E2D0;
+  border: 2px solid #99e2d0;
   width: 2.5em;
   margin-left: 2%;
   margin-top: 0.313em;
@@ -622,7 +643,7 @@ footer ul li i {
 }
 .restaurant-container .menu-restaurant .cardsmenu .menucontent li {
   list-style: none;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 0.94019em;
   width: 96%;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
@@ -642,7 +663,8 @@ footer ul li i {
   width: 85%;
   padding: 0.94em;
 }
-.restaurant-container .menu-restaurant .cardsmenu .menucontent li .plate p, .restaurant-container .menu-restaurant .cardsmenu .menucontent li .plate h4 {
+.restaurant-container .menu-restaurant .cardsmenu .menucontent li .plate p,
+.restaurant-container .menu-restaurant .cardsmenu .menucontent li .plate h4 {
   font-family: "Roboto", sans-serif;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -673,7 +695,13 @@ footer ul li i {
   display: flex;
   flex-direction: row;
 }
-.restaurant-container .menu-restaurant .cardsmenu .menucontent li .pricecheck .plateprice {
+.restaurant-container
+  .menu-restaurant
+  .cardsmenu
+  .menucontent
+  li
+  .pricecheck
+  .plateprice {
   display: flex;
   align-items: flex-end;
   padding-bottom: 1em;
@@ -683,9 +711,15 @@ footer ul li i {
   padding-right: 1em;
   transition: all 0.7s ease-in-out;
 }
-.restaurant-container .menu-restaurant .cardsmenu .menucontent li .pricecheck .check {
+.restaurant-container
+  .menu-restaurant
+  .cardsmenu
+  .menucontent
+  li
+  .pricecheck
+  .check {
   border-radius: 0 15px 15px 0;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   min-width: 4.66em;
   display: flex;
   align-items: center;
@@ -693,8 +727,15 @@ footer ul li i {
   transition: all 0.7s ease-in-out;
   margin-right: -4.66em;
 }
-.restaurant-container .menu-restaurant .cardsmenu .menucontent li .pricecheck .check i {
-  color: #FFFFFF;
+.restaurant-container
+  .menu-restaurant
+  .cardsmenu
+  .menucontent
+  li
+  .pricecheck
+  .check
+  i {
+  color: #ffffff;
   transition: all 0.7s ease-in-out;
   font-size: 1.7em;
 }
